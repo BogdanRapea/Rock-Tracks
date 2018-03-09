@@ -8,13 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		4369E1BE2051CC7A005577B2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4369E1BD2051CC7A005577B2 /* AppDelegate.m */; };
-		4369E1C12051CC7A005577B2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4369E1C02051CC7A005577B2 /* ViewController.m */; };
+		4369E1C12051CC7A005577B2 /* RockTracksViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4369E1C02051CC7A005577B2 /* RockTracksViewController.m */; };
 		4369E1C42051CC7A005577B2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4369E1C22051CC7A005577B2 /* Main.storyboard */; };
 		4369E1C62051CC7A005577B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4369E1C52051CC7A005577B2 /* Assets.xcassets */; };
 		4369E1C92051CC7A005577B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4369E1C72051CC7A005577B2 /* LaunchScreen.storyboard */; };
 		4369E1CC2051CC7A005577B2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4369E1CB2051CC7A005577B2 /* main.m */; };
 		4369E1D62051CC7A005577B2 /* Rock_TracksTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4369E1D52051CC7A005577B2 /* Rock_TracksTests.m */; };
 		4369E1E12051CC7A005577B2 /* Rock_TracksUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4369E1E02051CC7A005577B2 /* Rock_TracksUITests.m */; };
+		4369E1F32051CE75005577B2 /* RockTracksAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 4369E1F22051CE75005577B2 /* RockTracksAPI.m */; };
+		4369E1F62051CEC6005577B2 /* TrackModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4369E1F52051CEC6005577B2 /* TrackModel.m */; };
+		43C449A520520A2200720A6E /* TrackCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 43C449A420520A2200720A6E /* TrackCell.m */; };
+		43C449A820520AA100720A6E /* SingleTrackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43C449A720520AA100720A6E /* SingleTrackViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,8 +42,8 @@
 		4369E1B92051CC7A005577B2 /* Rock Tracks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Rock Tracks.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4369E1BC2051CC7A005577B2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		4369E1BD2051CC7A005577B2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		4369E1BF2051CC7A005577B2 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		4369E1C02051CC7A005577B2 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		4369E1BF2051CC7A005577B2 /* RockTracksViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RockTracksViewController.h; sourceTree = "<group>"; };
+		4369E1C02051CC7A005577B2 /* RockTracksViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RockTracksViewController.m; sourceTree = "<group>"; };
 		4369E1C32051CC7A005577B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4369E1C52051CC7A005577B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4369E1C82051CC7A005577B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +55,14 @@
 		4369E1DC2051CC7A005577B2 /* Rock TracksUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Rock TracksUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4369E1E02051CC7A005577B2 /* Rock_TracksUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Rock_TracksUITests.m; sourceTree = "<group>"; };
 		4369E1E22051CC7A005577B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4369E1F12051CE75005577B2 /* RockTracksAPI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RockTracksAPI.h; sourceTree = "<group>"; };
+		4369E1F22051CE75005577B2 /* RockTracksAPI.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RockTracksAPI.m; sourceTree = "<group>"; };
+		4369E1F42051CEC6005577B2 /* TrackModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TrackModel.h; sourceTree = "<group>"; };
+		4369E1F52051CEC6005577B2 /* TrackModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TrackModel.m; sourceTree = "<group>"; };
+		43C449A320520A2200720A6E /* TrackCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TrackCell.h; sourceTree = "<group>"; };
+		43C449A420520A2200720A6E /* TrackCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TrackCell.m; sourceTree = "<group>"; };
+		43C449A620520AA100720A6E /* SingleTrackViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SingleTrackViewController.h; sourceTree = "<group>"; };
+		43C449A720520AA100720A6E /* SingleTrackViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SingleTrackViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,10 +113,15 @@
 		4369E1BB2051CC7A005577B2 /* Rock Tracks */ = {
 			isa = PBXGroup;
 			children = (
+				4369E1F02051CDCD005577B2 /* Models */,
+				4369E1EF2051CDB9005577B2 /* Cells */,
+				4369E1EE2051CDAB005577B2 /* APIs */,
 				4369E1BC2051CC7A005577B2 /* AppDelegate.h */,
 				4369E1BD2051CC7A005577B2 /* AppDelegate.m */,
-				4369E1BF2051CC7A005577B2 /* ViewController.h */,
-				4369E1C02051CC7A005577B2 /* ViewController.m */,
+				4369E1BF2051CC7A005577B2 /* RockTracksViewController.h */,
+				4369E1C02051CC7A005577B2 /* RockTracksViewController.m */,
+				43C449A620520AA100720A6E /* SingleTrackViewController.h */,
+				43C449A720520AA100720A6E /* SingleTrackViewController.m */,
 				4369E1C22051CC7A005577B2 /* Main.storyboard */,
 				4369E1C52051CC7A005577B2 /* Assets.xcassets */,
 				4369E1C72051CC7A005577B2 /* LaunchScreen.storyboard */,
@@ -130,6 +147,33 @@
 				4369E1E22051CC7A005577B2 /* Info.plist */,
 			);
 			path = "Rock TracksUITests";
+			sourceTree = "<group>";
+		};
+		4369E1EE2051CDAB005577B2 /* APIs */ = {
+			isa = PBXGroup;
+			children = (
+				4369E1F12051CE75005577B2 /* RockTracksAPI.h */,
+				4369E1F22051CE75005577B2 /* RockTracksAPI.m */,
+			);
+			path = APIs;
+			sourceTree = "<group>";
+		};
+		4369E1EF2051CDB9005577B2 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				43C449A320520A2200720A6E /* TrackCell.h */,
+				43C449A420520A2200720A6E /* TrackCell.m */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		4369E1F02051CDCD005577B2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4369E1F42051CEC6005577B2 /* TrackModel.h */,
+				4369E1F52051CEC6005577B2 /* TrackModel.m */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,9 +309,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4369E1C12051CC7A005577B2 /* ViewController.m in Sources */,
+				4369E1C12051CC7A005577B2 /* RockTracksViewController.m in Sources */,
 				4369E1CC2051CC7A005577B2 /* main.m in Sources */,
 				4369E1BE2051CC7A005577B2 /* AppDelegate.m in Sources */,
+				43C449A820520AA100720A6E /* SingleTrackViewController.m in Sources */,
+				4369E1F62051CEC6005577B2 /* TrackModel.m in Sources */,
+				4369E1F32051CE75005577B2 /* RockTracksAPI.m in Sources */,
+				43C449A520520A2200720A6E /* TrackCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,6 +480,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "Rock Tracks/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "BR.Rock-Tracks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -445,6 +494,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "Rock Tracks/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "BR.Rock-Tracks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
