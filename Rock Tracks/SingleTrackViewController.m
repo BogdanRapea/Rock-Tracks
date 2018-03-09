@@ -17,6 +17,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self fillViewFromModel];
+    self.moreButton.layer.cornerRadius = 15.0f;
 }
 
 
