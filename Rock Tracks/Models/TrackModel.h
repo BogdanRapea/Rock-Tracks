@@ -17,8 +17,9 @@
 @property (strong, nonatomic) NSString *artist;
 @property (strong, nonatomic) NSString *price;
 @property (strong, nonatomic) NSString *imageURL;
-@property (strong, nonatomic) NSString *duration;
+@property (strong, nonatomic) NSNumber *duration;
 @property (strong, nonatomic) NSString *releaseDate;
+@property (strong, nonatomic) NSString *trackViewUrl;
 @property (strong, nonatomic) UIImage *image;
 @property (strong, nonatomic) UIImage *defaultImage;
 

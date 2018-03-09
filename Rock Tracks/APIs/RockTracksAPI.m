@@ -12,8 +12,6 @@
 
 - (void)getTracks:(void (^)(NSArray <TrackModel*> *trackModels))successBlock failure:(void (^)(NSError *error))failureBlock {
     
-    //__weak typeof (self) weakSelf = self;
-    
     NSURL *url = [NSURL URLWithString:@"https://itunes.apple.com/search?term=rock&media=music"];
 
     NSURLSessionDataTask *downloadTask = [[NSURLSession sharedSession] dataTaskWithURL:url completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {

@@ -9,11 +9,13 @@
 #import "RockTracksViewController.h"
 #import "RockTracksAPI.h"
 #import "TrackCell.h"
+#import "SingleTrackViewController.h"
 
 @interface RockTracksViewController ()
 
 @property (strong, nonatomic) RockTracksAPI *rockTracksAPI;
 @property (strong, nonatomic) NSArray *tracks;
+@property (assign, nonatomic) NSInteger lastSelectedRow;
 
 @end
 
@@ -45,6 +47,10 @@
     }];
 }
 
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    SingleTrackViewController *controller = [segue destinationViewController];
+    [controller setTrackModel:self.tracks[self.lastSelectedRow]];
+}
 
 
 #pragma mark - Table View
@@ -65,27 +71,31 @@
         cell = [[TrackCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:trackCellID];
         
     }
-
-    [cell.image setImage:[UIImage imageNamed:@"Default"]];
     
     TrackModel *track = self.tracks[indexPath.row];
     cell.name.text = track.name;
     cell.artist.text = track.artist;
     cell.price.text = track.price;
     
-    [track loadImage:^(UIImage *image) {
-        dispatch_async(dispatch_get_main_queue(), ^{
-            [cell.image setImage:image];
+    if (track.image) {
+        [cell.image setImage:track.image];
+    }
+    else {
+        [cell.image setImage:track.defaultImage];
+        [track loadImage:^(UIImage *image) {
+            dispatch_async(dispatch_get_main_queue(), ^{
+                [cell.image setImage:image];
+                
+            });
             
-        });
-        
-    }];
+        }];
+    }
     return cell;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
-    
+    self.lastSelectedRow = indexPath.row;
     [self performSegueWithIdentifier:@"SingleTrackView" sender:self];
 }
 
